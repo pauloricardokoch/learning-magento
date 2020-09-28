@@ -2,6 +2,7 @@
 
 ## Setup
 Copy mysql.env.example to mysql.env
+
 Run bin/up 
 
 ## Available commands
