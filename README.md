@@ -1,8 +1,10 @@
 # Magento
 
-## environment
-Available commands
+## Setup
+Copy mysql.env.example to mysql.env
+Run bin/up 
 
+## Available commands
     bin/down
         remove all containers
     
