@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+        - ./src:/src
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: magento
+    env_file: 
+      - environment.env
