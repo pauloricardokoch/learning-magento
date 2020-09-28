@@ -3,7 +3,27 @@
 ## environment
 Available commands
 
-...
+    bin/down
+        remove all containers
+    
+    bin/list
+        list all images
+    
+    bin/mysql
+        start mysql container
+    
+    bin/start
+        start all containers
+    
+    bin/status
+        list containers status
+    
+    bin/stop
+        stop all containers
+    
+    bin/up
+        create containers
+    
 
 ## Links
 ### Magento 2.4 Developer Documentation
