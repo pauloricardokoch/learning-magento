@@ -1,7 +1,7 @@
 # Magento
 
 ## Setup
-Copy mysql.env.example to mysql.env
+Copy mysql.env.example file to mysql.env, remember to change mysql password 
 
 Run bin/up 
 
