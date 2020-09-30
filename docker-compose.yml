@@ -14,3 +14,10 @@ services:
       MYSQL_DATABASE: magento
     env_file:
       - mysql.env
+        
+  php:
+    build:
+      context: ./.docker/context/php
+      network: host
+    volumes:
+        - ./src:/src
