@@ -7,6 +7,7 @@ services:
       - "8080:80"
     volumes:
       - ./src:/src
+      - .docker/conf/nginx/info.conf:/etc/nginx/conf.d/info.conf
 
   mysql:
     image: mysql:8.0
@@ -17,7 +18,7 @@ services:
         
   php:
     build:
-      context: ./.docker/context/php
+      context: ./.docker/build/context/php
       network: host
     volumes:
-        - ./src:/src
+      - ./src:/src
